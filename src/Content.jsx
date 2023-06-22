@@ -4,6 +4,7 @@ import { GamesIndex } from "./GamesIndex";
 import { GamesNew } from "./GamesNew";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 
 export function Content() {
   const [games, setGames] = useState([]);
@@ -31,6 +32,7 @@ export function Content() {
     <div>
       <Signup />
       <Login />
+      <LogoutLink />
       <GamesNew onCreateGame={handleCreateGame} />
       <GamesIndex games={games} />
     </div>
