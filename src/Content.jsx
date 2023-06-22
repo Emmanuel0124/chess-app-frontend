@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react"; 
-
 import { GamesIndex } from "./GamesIndex";
 import { GamesNew } from "./GamesNew";
+import { Signup } from "./Signup";
+// import { Login } from "./Login";
 
 export function Content() {
   const [games, setGames] = useState([]);
@@ -28,8 +29,10 @@ export function Content() {
 
   return (
     <div>
+      <Signup />
+      {/* <Login /> */}
       <GamesNew onCreateGame={handleCreateGame} />
-       <GamesIndex games={games} />
+      <GamesIndex games={games} />
     </div>
   );
 }
