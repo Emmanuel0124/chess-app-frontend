@@ -34,7 +34,6 @@ export function Content() {
      <Routes>
       <Route path="/signup" element={<Signup />}/>
       <Route path="/login" element={<Login />}/>
-      <Route path="logout" element={<LogoutLink />}/>
       <Route path="/gamenew" element={<GamesNew onCreateGame={handleCreateGame} />}/>
       <Route path="/" element={<GamesIndex games={games} />}/>
      </Routes>

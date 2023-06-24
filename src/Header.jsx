@@ -1,8 +1,11 @@
+import { LogoutLink } from "./LogoutLink"
+import { Link } from "react-router-dom"
+
 export function Header() {
   return (
     <header>
       <nav>
-        <a href="#">Home</a> | <a href="#">Link</a>
+       <Link to="/">Home</Link> | <Link to="/login">login</Link> | <LogoutLink />
       </nav>
     </header>
   )
