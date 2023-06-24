@@ -5,6 +5,7 @@ import { GamesNew } from "./GamesNew";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
+import { Route, Routes } from "react-router-dom";
 
 export function Content() {
   const [games, setGames] = useState([]);
@@ -30,11 +31,14 @@ export function Content() {
 
   return (
     <div>
-      <Signup />
-      <Login />
-      <LogoutLink />
-      <GamesNew onCreateGame={handleCreateGame} />
-      <GamesIndex games={games} />
+     <Routes>
+      <Route path="/signup" element={<Signup />}/>
+      <Route path="/login" element={<Login />}/>
+      <Route path="logout" element={<LogoutLink />}/>
+      <Route path="/gamenew" element={<GamesNew onCreateGame={handleCreateGame} />}/>
+      <Route path="/" element={<GamesIndex games={games} />}/>
+     </Routes>
+     
     </div>
   );
 }
