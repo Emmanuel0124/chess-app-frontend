@@ -1,12 +1,14 @@
+import "./GamesIndex.css";
+
 export function GamesIndex(props) {
   return (
-    <div>
+    <div className="container">
       <h1>All games</h1>
       {props.games.map((game) => (
-         <div key={game.id}>
-           <img src={game.image_url} />
-           <p>result: {game.result}</p>
-           <p>winner: {game.winner}</p>
+         <div className="game-item" key={game.id}>
+           <img className="image" src={game.image_url} />
+           <p className="game-result">result: {game.result}</p>
+           <p className="game-winner">winner: {game.winner}</p>
          </div>
        ))}
     </div>
