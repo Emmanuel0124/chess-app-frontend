@@ -1,13 +1,38 @@
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  image-rendering: auto;
-}
-
-h1 {
   text-align: center;
 }
 
-p {
-  font-size: 20px;
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-card {
+  width: calc(33.33% - 20px);
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.game-details {
+  font-size: 16px;
+}
+
+.game-result,
+.game-winner {
+  margin: 5px 0;
 }
