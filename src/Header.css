@@ -1,0 +1,44 @@
+header {
+  background-color: #d9dbdd36;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #189439 !important;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-link.disabled {
+  color: #189439 !important;
+  cursor: not-allowed;
+  /* Added cursor property to indicate disabled state */
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: #498716b6;
+  color: #000;
+  /* Changed text color on hover */
+}
