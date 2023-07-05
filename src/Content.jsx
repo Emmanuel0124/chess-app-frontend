@@ -6,6 +6,7 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
 import { Route, Routes } from "react-router-dom";
+import { GamesShow } from "./GamesShow";
 
 export function Content() {
   const [games, setGames] = useState([]);
@@ -36,6 +37,7 @@ export function Content() {
       <Route path="/login" element={<Login />}/>
       <Route path="/gamenew" element={<GamesNew onCreateGame={handleCreateGame} />}/>
       <Route path="/" element={<GamesIndex games={games} />}/>
+      <Route path="/games/:id" element={<GamesShow />} />
      </Routes>
      
     </div>
