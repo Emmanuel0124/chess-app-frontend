@@ -17,8 +17,14 @@ export function GamesShow() {
   useEffect(getShowGame, [])
   return (
     <div>
-      <h1> {game.result} </h1>
       <p>id: {game.id} </p>
+      <div className="game-card" key={game.id}>
+            <img className="image" src={game.image_url} alt={game.title} />
+            <div className="game-details">
+              <p className="game-result">Result: {game.result}</p>
+              <p className="game-winner">Winner: {game.winner}</p>
+            </div>
+          </div>
     </div>
   );
 }

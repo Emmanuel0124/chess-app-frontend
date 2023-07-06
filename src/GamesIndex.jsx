@@ -1,4 +1,5 @@
 import "./GamesIndex.css";
+import { Link } from "react-router-dom";
 
 export function GamesIndex(props) {
   return (
@@ -11,6 +12,7 @@ export function GamesIndex(props) {
             <div className="game-details">
               <p className="game-result">Result: {game.result}</p>
               <p className="game-winner">Winner: {game.winner}</p>
+              <Link to={`/games/${game.id}`} className="button">See Game</Link>
             </div>
           </div>
         ))}
