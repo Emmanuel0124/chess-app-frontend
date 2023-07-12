@@ -23,6 +23,10 @@ export function GamesShow() {
             <div className="game-details">
               <p className="game-result">Result: {game.result}</p>
               <p className="game-winner">Winner: {game.winner}</p>
+              <p>white player: {game.white_player} </p>
+              <p>black player: {game.black_player} </p>
+              <p>Loser: {game.loser} </p>
+              <p>number of moves: {game.number_of_moves} </p>
             </div>
           </div>
     </div>
