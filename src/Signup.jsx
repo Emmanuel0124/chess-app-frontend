@@ -22,7 +22,7 @@ export function Signup() {
   };
 
   return (
-    <div id="signup">
+    <div id="signup" className="container">
       <h1>Signup</h1>
       <ul>
         {errors.map((error) => (
@@ -30,19 +30,23 @@ export function Signup() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <div>
-          Name: <input name="name" type="text" />
+        <div className="form-group">
+          <input placeholder="Name" name="name" type="text" className="form-control"/>
         </div>
-        <div>
-          Email: <input name="email" type="email" />
+        <br></br>
+        <div className="form-group">
+          <input placeholder="Email" name="email" type="email" className="form-control"/>
         </div>
-        <div>
-          Password: <input name="password" type="password" />
+        <br></br>
+        <div className="form-group">
+          <input placeholder="Password" name="password" type="password" className="form-control"/>
         </div>
-        <div>
-          Password confirmation: <input name="password_confirmation" type="password" />
+        <br></br>
+        <div className="form-group">
+          <input placeholder="Password Confirmation" name="password_confirmation" type="password" className="form-control"/>
         </div>
-        <button type="submit">Signup</button>
+        <br></br>
+        <button type="submit" className="btn btn-success">Signup</button>
       </form>
     </div>
   );
