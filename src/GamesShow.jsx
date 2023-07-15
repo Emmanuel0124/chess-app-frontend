@@ -19,7 +19,7 @@ export function GamesShow() {
     <div>
       <p>id: {game.id} </p>
       <div className="game-card" key={game.id}>
-            <img className="image" src={game.image_url} alt={game.title} />
+            <img className="image" src={game.gif_url} alt={game.title} />
             <div className="game-details">
               <p className="game-number">Number of moves: {game.number_of_moves}</p>
               <p className="game-result">Result: {game.result}</p>

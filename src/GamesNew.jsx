@@ -33,11 +33,11 @@ export function GamesNew(props) {
         </div>
         <br></br>
         <div>
-          <input placeholder="Gif url" name="image_url" type="text" className="form-control"/>
+          <input placeholder="Image url" name="image_url" type="text" className="form-control"/>
         </div>
         <br></br>
         <div>
-          <input placeholder="Image" name="picture" type="text" className="form-control"/>
+          <input placeholder="Gif url" name="gif_url" type="text" className="form-control"/>
         </div>
         <br></br>
         <button type="submit" className="btn btn-success">Create game</button>
