@@ -5,34 +5,42 @@ export function GamesNew(props) {
     props.onCreateGame(params, () => event.target.reset());
   };
   return(
-    <div>
+    <div id="gamesnew" className="container">
       <h1>New game</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          Winner: <input name="winner" type="text"/>
+          <input placeholder="Winner" name="winner" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Loser: <input name="loser" type="text"/>
+          <input placeholder="Loser" name="loser" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Result: <input name="result" type="text"/>
+          <input placeholder="Results" name="result" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Number of moves: <input name="number_of_moves" type="text"/>
+          <input placeholder="Number of moves" name="number_of_moves" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Black player: <input name="black_player" type="text"/>
+          <input placeholder="Black player" name="black_player" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          White player: <input name="white_player" type="text"/>
+          <input placeholder="White player" name="white_player" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Gif: <input name="image_url" type="text"/>
+          <input placeholder="Gif url" name="image_url" type="text" className="form-control"/>
         </div>
+        <br></br>
         <div>
-          Picture: <input name="picture" type="text"/>
+          <input placeholder="Image" name="picture" type="text" className="form-control"/>
         </div>
-        <button type="submit">Create game</button>
+        <br></br>
+        <button type="submit" className="btn btn-success">Create game</button>
       </form>
     </div>
   );
