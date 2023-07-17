@@ -16,8 +16,7 @@ export function GamesShow() {
 
   useEffect(getShowGame, [])
   return (
-    <div>
-      <p>id: {game.id} </p>
+    <div className="container">
       <div className="game-card" key={game.id}>
             <img className="image" src={game.gif_url} alt={game.title} />
             <div className="game-details">
