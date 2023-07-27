@@ -53,6 +53,7 @@ export function GamesShow() {
           <p className="game-players">White player: {game.white_player},  Black player: {game.black_player} </p>
           <p className="game-winner">{game.winner} won by {game.result}, in {game.number_of_moves} total moves against {game.loser}</p>
         </div>
+        <hr/>
         <img className="image" src={game.gif_url} alt={game.title} />
         <div className="card">
           {comments.map(comment => (
@@ -63,7 +64,7 @@ export function GamesShow() {
         <div>
           <form onSubmit={handleCommentSubmit}>
             <input placeholder="Leave a comment!" name="content" type="text" value={newComment} onChange={handleCommentChange}/>
-            <button type="submit">Comment</button>
+            <button className="btn btn-success" type="submit">Comment</button>
           </form>
         </div>
       </div>
