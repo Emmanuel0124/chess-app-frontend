@@ -38,7 +38,96 @@ ul.nav {
 }
 
 .nav-link:hover {
-  background-color: #498716b6;
+  background-color: #96ff92a2;
   color: #000;
   /* Changed text color on hover */
+}
+
+/* Header Styles */
+.header-container {
+  background-color: #d9dbdd36;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #189439 !important;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-link.disabled {
+  color: #189439 !important;
+  cursor: not-allowed;
+  /* Added cursor property to indicate disabled state */
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: #189439 !important;
+  text-decoration: none;
+  padding: none;
+  border-radius: none;
+  cursor: pointer;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: #189439 !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #96ff92a2;
+  color: #000;
+  /* Changed text color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Bootstrap styles */
+.navbar-brand {
+  color: #000000 !important;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

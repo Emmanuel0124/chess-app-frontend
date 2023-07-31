@@ -13,11 +13,16 @@ export function Header() {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div className="navbar-nav">
+      <div className="dropdown" >
+        <button className="dropbtn">user info</button>
+      <div className="dropdown-content">
         <a className="nav-link" aria-current="page" href="/login">Login</a>
         <a className="nav-link" href="/signup">Signup</a>
+        <hr/>
         <LogoutLink />
       </div>
+      </div>
+      <a className="nav-link" href="/gamenew">Post your game!</a>
     </div>
   </div>
 </nav>
