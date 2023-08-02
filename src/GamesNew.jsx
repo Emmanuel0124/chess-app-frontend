@@ -5,7 +5,9 @@ export function GamesNew(props) {
     props.onCreateGame(params, () => event.target.reset());
   };
   return(
-    <div id="gamesnew" className="container">
+    <div className="row">
+    <div className="col-sm"></div>
+    <div className="col-sm"><div id="gamesnew" className="container">
       <h1>New game</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -48,7 +50,9 @@ export function GamesNew(props) {
         <br></br>
         <button type="submit" className="btn btn-success">Create game</button>
       </form>
-    </div>
+    </div></div>
+    <div className="col-sm"></div>
+</div>
   );
 
 }
