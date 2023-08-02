@@ -47,8 +47,10 @@ export function GamesShow() {
   };
 
   return (
-    <div className="container">
-      <div className="game-card" key={game.id}>
+    <div className="row">
+    <div className="col-sm"></div>
+    <div className="col-sm"><div className="container">
+      <div key={game.id}>
         <div className="game-details">
           <p className="game-players">White player: {game.white_player},  Black player: {game.black_player} </p>
           <p className="game-winner">{game.winner} won by {game.result}, in {game.number_of_moves} total moves against {game.loser}</p>
@@ -68,6 +70,8 @@ export function GamesShow() {
           </form>
         </div>
       </div>
-    </div>
+    </div></div>
+    <div className="col-sm"></div>
+  </div>
   );
 }
