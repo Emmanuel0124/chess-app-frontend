@@ -30,7 +30,9 @@ export function Login() {
   };
 
   return (
-    <div id="login" className="container">
+    <div className="row">
+    <div className="col-sm"></div>
+    <div className="col-sm"><div id="login" className="container">
       <h1 className="text-center">Login</h1>
       {errors.length > 0 && (
         <ul className="alert alert-danger">
@@ -50,6 +52,8 @@ export function Login() {
         <br></br>
         <button type="submit" className="btn btn-success">Login</button>
       </form>
-    </div>
+    </div></div>
+    <div className="col-sm"></div>
+  </div>
   );
 }  
