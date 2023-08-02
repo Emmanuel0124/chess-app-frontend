@@ -22,7 +22,9 @@ export function Signup() {
   };
 
   return (
-    <div id="signup" className="container">
+    <div className="row">
+    <div className="col-sm"></div>
+    <div className="col-sm"><div id="signup" className="container">
       <h1>Signup</h1>
       <ul>
         {errors.map((error) => (
@@ -48,6 +50,8 @@ export function Signup() {
         <br></br>
         <button type="submit" className="btn btn-success">Signup</button>
       </form>
-    </div>
+    </div></div>
+    <div className="col-sm"></div>
+  </div>
   );
 }
