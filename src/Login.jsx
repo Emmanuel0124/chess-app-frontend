@@ -33,7 +33,7 @@ export function Login() {
     <div className="row">
     <div className="col-sm"></div>
     <div className="col-sm"><div id="login" className="container">
-      <h1 className="text-center">Login</h1>
+      <br/>
       {errors.length > 0 && (
         <ul className="alert alert-danger">
           {errors.map((error) => (

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export function GamesIndex(props) {
   return (
     <div className="container">
-      <h1 className="title">All games</h1>
       <div className="card-container">
         {props.games.map((game) => (
           <div className="game-card" key={game.id}>

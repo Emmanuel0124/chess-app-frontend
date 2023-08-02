@@ -8,7 +8,7 @@ export function GamesNew(props) {
     <div className="row">
     <div className="col-sm"></div>
     <div className="col-sm"><div id="gamesnew" className="container">
-      <h1>New game</h1>
+      <br/>
       <form onSubmit={handleSubmit}>
         <div>
           <input placeholder="Winner" name="winner" type="text" className="form-control"/>

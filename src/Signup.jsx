@@ -25,7 +25,6 @@ export function Signup() {
     <div className="row">
     <div className="col-sm"></div>
     <div className="col-sm"><div id="signup" className="container">
-      <h1>Signup</h1>
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
