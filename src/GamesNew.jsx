@@ -18,16 +18,16 @@ export function GamesNew(props) {
         <br></br>
         <div>
         <select name="result" className="form-select" aria-label="Default select example">
-          <option selected>Results of game</option>
+          <option selected>Winner by</option>
           <option value="CheckMate">CheckMate</option>
-          <option value="Resigned">Resigned</option>
+          <option value="Resignation">Resignation</option>
           <option value="Draw">Draw</option>
-          <option value="Timed out">Timed out</option>
+          <option value="Timed out">Time</option>
         </select>
         </div>
         <br></br>
         <div>
-          <input placeholder="Number of moves" name="number_of_moves" type="text" className="form-control"/>
+          <input placeholder="Number of moves" name="number_of_moves" type="number" id="typeNumber" className="form-control" min="2" max="79" />
         </div>
         <br></br>
         <div>
