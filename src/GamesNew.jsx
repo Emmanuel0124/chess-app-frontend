@@ -20,7 +20,7 @@ export function GamesNew(props) {
         <br></br>
         <div>
         <select name="result" className="form-select" aria-label="Default select example">
-          <option selected>Winner by</option>
+          <option defaultValue>Winner by</option>
           <option value="CheckMate">CheckMate</option>
           <option value="Resignation">Resignation</option>
           <option value="Draw">Draw</option>

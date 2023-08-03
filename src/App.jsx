@@ -5,7 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
-  console.log("hello");
   return (
    <BrowserRouter >
      <div>
