@@ -1,6 +1,7 @@
 import { LogoutLink } from "./LogoutLink"
 import { Link } from "react-router-dom"
 import "./Header.css";
+import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/dist/css/bootstrap.css";
 
 export function Header() {
